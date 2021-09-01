@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Language" content="gb2312" />
+    <title>日历-农历</title>
+
+    <link href="./calendar/default.css" rel="stylesheet" type="text/css" />
+    <link href="./calendar/style_v21.css" rel="stylesheet" type="text/css" />
+
+    <STYLE TYPE="text/css">     
+
+    </STYLE>
+
+    <script type="text/javascript">
+        var yearInfo = [1901, 1902, 1903, 1904, 1905, 1906, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942, 1943, 1944, 1945, 1946, 1947, 1948, 1949, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035, 2036, 2037, 2038, 2039, 2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047, 2048, 2049];
+    </script>
+
+</head>
+    
+
+</head>
+<body style="overflow:-Scroll;overflow-x: hidden;overflow-y: hidden;margin-top:4px;margin-left:-20px;">
+
+    <div id="wrap">
+        <div class="wnl-title">
+            <div class="time-control">
+                <div class="control-bar year-bar">
+                    <a class="prev" href="javascript:;" onclick="pushBtm(&#39;YU&#39;)"></a>
+                    <div class="control">
+                        <div class="field year" id="current-data">2021年</div><i class="trigger" onclick="$(&#39;#current-data&#39;).trigger(&#39;click&#39;);"></i>
+                        <ul class="list" id="select-year" style="display: none;"><li>1901年</li><li>1902年</li><li>1903年</li><li>1904年</li><li>1905年</li><li>1906年</li><li>1907年</li><li>1908年</li><li>1909年</li><li>1910年</li><li>1911年</li><li>1912年</li><li>1913年</li><li>1914年</li><li>1915年</li><li>1916年</li><li>1917年</li><li>1918年</li><li>1919年</li><li>1920年</li><li>1921年</li><li>1922年</li><li>1923年</li><li>1924年</li><li>1925年</li><li>1926年</li><li>1927年</li><li>1928年</li><li>1929年</li><li>1930年</li><li>1931年</li><li>1932年</li><li>1933年</li><li>1934年</li><li>1935年</li><li>1936年</li><li>1937年</li><li>1938年</li><li>1939年</li><li>1940年</li><li>1941年</li><li>1942年</li><li>1943年</li><li>1944年</li><li>1945年</li><li>1946年</li><li>1947年</li><li>1948年</li><li>1949年</li><li>1950年</li><li>1951年</li><li>1952年</li><li>1953年</li><li>1954年</li><li>1955年</li><li>1956年</li><li>1957年</li><li>1958年</li><li>1959年</li><li>1960年</li><li>1961年</li><li>1962年</li><li>1963年</li><li>1964年</li><li>1965年</li><li>1966年</li><li>1967年</li><li>1968年</li><li>1969年</li><li>1970年</li><li>1971年</li><li>1972年</li><li>1973年</li><li>1974年</li><li>1975年</li><li>1976年</li><li>1977年</li><li>1978年</li><li>1979年</li><li>1980年</li><li>1981年</li><li>1982年</li><li>1983年</li><li>1984年</li><li>1985年</li><li>1986年</li><li>1987年</li><li>1988年</li><li>1989年</li><li>1990年</li><li>1991年</li><li>1992年</li><li>1993年</li><li>1994年</li><li>1995年</li><li>1996年</li><li>1997年</li><li>1998年</li><li>1999年</li><li>2000年</li><li>2001年</li><li>2002年</li><li>2003年</li><li>2004年</li><li>2005年</li><li>2006年</li><li>2007年</li><li>2008年</li><li>2009年</li><li>2010年</li><li>2011年</li><li>2012年</li><li>2013年</li><li>2014年</li><li>2015年</li><li>2016年</li><li>2017年</li><li>2018年</li><li>2019年</li><li>2020年</li><li>2021年</li><li>2022年</li><li>2023年</li><li>2024年</li><li>2025年</li><li>2026年</li><li>2027年</li><li>2028年</li><li>2029年</li><li>2030年</li><li>2031年</li><li>2032年</li><li>2033年</li><li>2034年</li><li>2035年</li><li>2036年</li><li>2037年</li><li>2038年</li><li>2039年</li><li>2040年</li><li>2041年</li><li>2042年</li><li>2043年</li><li>2044年</li><li>2045年</li><li>2046年</li><li>2047年</li><li>2048年</li><li>2049年</li></ul>
+                        <script type="text/javascript">
+                            var list = '';
+                            for (var i = 0; i < yearInfo.length; i++) {
+                                list += '<li>' + yearInfo[i] + '年</li>'
+                            }
+                            document.getElementById('select-year').innerHTML = list;
+                        </script>
+                    </div>
+                    <a class="next" href="javascript:;" onclick="pushBtm(&#39;YD&#39;)"></a>
+                </div>
+                <div class="control-bar mouth-bar">
+                    <a class="prev" href="javascript:;" onclick="pushBtm(&#39;MU&#39;)"></a>
+                    <div class="control">
+                        <div class="field month" id="current-data-month">3月</div><i class="trigger" onclick="$(&#39;#current-data-month&#39;).trigger(&#39;click&#39;)"></i>
+                        <ul class="list" style="display: none;" id="select-month">
+                            <li>1月</li>
+                            <li>2月</li>
+                            <li>3月</li>
+                            <li>4月</li>
+                            <li>5月</li>
+                            <li>6月</li>
+                            <li>7月</li>
+                            <li>8月</li>
+                            <li>9月</li>
+                            <li>10月</li>
+                            <li>11月</li>
+                            <li>12月</li>
+                        </ul>
+                    </div>
+                    <a class="next" href="javascript:;" onclick="pushBtm(&#39;MD&#39;)"></a>
+                </div>
+                <div class="control-bar simple-control">
+                    <div class="control">
+                        <div class="field holiday" id="holiday_plan">2021年放假安排</div><i class="trigger" onclick="$(&#39;#holiday_plan&#39;).trigger(&#39;click&#39;)"></i>
+                        <ul class="list" style="display: none;" id="holiday_list">
+                            <li rel="1" red="1" rev="0">元旦</li>
+                            <li rel="2" red="16" rev="0">春节</li>
+                            <li rel="4" red="5" rev="3">清明节</li>
+                            <li rel="5" red="1" rev="4">劳动节</li>
+                            <li rel="6" red="18" rev="4">端午节</li>
+                            <li rel="9" red="24" rev="9">中秋节</li>
+                            <li rel="10" red="1" rev="9">国庆节</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="control-bar today-bar"><a class="btn-today" href="javascript:;" onclick="pushBtm(&#39;JT&#39;)">返回今日</a></div>
+            </div>
+        </div>
+        <!-- option Set end -->
+        <div class="mian clearfix">
+            <div class="content-c">
+                <!-- 主要日历模块 -->
+                <div class="calendar" id="calendar_box">
+                    <div class="calendar_th" id="date_show">
+                        <ul class="clearfix">
+                            <li class="weekend">星期日</li>
+                            <li>星期一</li>
+                            <li>星期二</li>
+                            <li>星期三</li>
+                            <li>星期四</li>
+                            <li>星期五</li>
+                            <li class="weekend">星期六</li>
+                        </ul>
+                    </div>
+                    <div class="calendar_td">
+                        <ol class="clearfix">
+                            <script type="text/javascript">
+                                var myDate = new Date();
+                                var numList = new Array();
+                                var year = myDate.getFullYear();
+                                var month = myDate.getMonth();
+                                var day = myDate.getDate();
+                                var firstDay = new Date(year, month, 1);
+                                var lastDay = new Date(year, month + 1, 0);
+                                var start = firstDay.getDay();
+                                var end = lastDay.getDay();
+                                var dayNum = lastDay.getDate();
+                                for (var i = start; i > 0; i--) {
+                                    numList.push(new Date(year, month, 1 - i).getDate());
+                                };
+
+                                for (var i = 0; i < dayNum; i++) {
+                                    numList.push(i + 1);
+                                };
+
+                                for (var i = 0; i < 6 - end; i++) {
+                                    numList.push(new Date(year, month + 1, i + 1).getDate());
+                                };
+                                var gNum;
+                                for (i = 0; i < 6; i++) {
+                                    for (j = 0; j < 7; j++) {
+                                        gNum = i * 7 + j;
+                                        if (j == 0) {
+                                            document.write('<li id="GD' + gNum + '" onclick="mOvr(' + gNum + ')" class="weekend" week="sun">');
+                                        } else if (j == 6) {
+                                            document.write('<li id="GD' + gNum + '" onclick="mOvr(' + gNum + ')" class="weekend">');
+                                        } else {
+                                            document.write('<li id="GD' + gNum + '" onclick="mOvr(' + gNum + ')" class="">');
+                                        }
+
+                                        document.write('<div id="SD' + gNum + '" class="solar">' + numList[gNum] + '</div>');
+                                        document.write('<span id="LD' + gNum + '" class="lunar"></span>');
+                                        document.write('</li>');
+                                        if (i == 5) {
+                                            document.getElementById('GD' + gNum).style.display = 'none';
+                                        }
+                                    }
+                                }
+
+                            </script>
+                            <li id="GD0" onclick="mOvr(0)" class="weekend cross_month" week="sun"><div id="SD0" class="solar" rel="up">28</div><span id="LD0" class="lunar">十七</span></li>
+                            <li id="GD1" onclick="mOvr(1)" class=""><div id="SD1" class="solar" rel="up">1</div><span id="LD1" class="lunar">十八</span></li>
+                            <li id="GD2" onclick="mOvr(2)" class=""><div id="SD2" class="solar" rel="up">2</div><span id="LD2" class="lunar">十九</span></li>
+                            <li id="GD3" onclick="mOvr(3)" class=""><div id="SD3" class="solar" rel="up">3</div><span id="LD3" class="lunar">二十</span><div class="selected"></div></li>
+                            <li id="GD4" onclick="mOvr(4)" class=""><div id="SD4" class="solar">4</div><span id="LD4" class="lunar">廿一</span></li>
+                            <li id="GD5" onclick="mOvr(5)" class=""><div id="SD5" class="solar">5</div><span id="LD5" class="lunar"><font color="#0058b2">惊蛰</font></span></li>
+                            <li id="GD6" onclick="mOvr(6)" class="weekend"><div id="SD6" class="solar">6</div><span id="LD6" class="lunar">廿三</span></li>
+                            <li id="GD7" onclick="mOvr(7)" class="weekend" week="sun"><div id="SD7" class="solar">7</div><span id="LD7" class="lunar">廿四</span></li>
+                            <li id="GD8" onclick="mOvr(8)" class=""><div id="SD8" class="solar">8</div><span id="LD8" class="lunar"><font color="#009900">妇女节</font></span></li>
+                            <li id="GD9" onclick="mOvr(9)" class=""><div id="SD9" class="solar">9</div><span id="LD9" class="lunar">廿六</span></li>
+                            <li id="GD10" onclick="mOvr(10)" class=""><div id="SD10" class="solar">10</div><span id="LD10" class="lunar">廿七</span></li>
+                            <li id="GD11" onclick="mOvr(11)" class=""><div id="SD11" class="solar">11</div><span id="LD11" class="lunar">廿八</span></li>
+                            <li id="GD12" onclick="mOvr(12)" class=""><div id="SD12" class="solar">12</div><span id="LD12" class="lunar"><font color="#009900">植树节</font></span></li>
+                            <li id="GD13" onclick="mOvr(13)" class="weekend"><div id="SD13" class="solar">13</div><span id="LD13" class="lunar">二月</span></li>
+                            <li id="GD14" onclick="mOvr(14)" class="weekend" week="sun"><div id="SD14" class="solar">14</div><span id="LD14" class="lunar"><font color="#d74146">龙抬头</font></span></li>
+                            <li id="GD15" onclick="mOvr(15)" class=""><div id="SD15" class="solar">15</div><span id="LD15" class="lunar">初三</span></li>
+                            <li id="GD16" onclick="mOvr(16)" class=""><div id="SD16" class="solar">16</div><span id="LD16" class="lunar">初四</span></li>
+                            <li id="GD17" onclick="mOvr(17)" class=""><div id="SD17" class="solar">17</div><span id="LD17" class="lunar">初五</span></li>
+                            <li id="GD18" onclick="mOvr(18)" class=""><div id="SD18" class="solar">18</div><span id="LD18" class="lunar">初六</span></li>
+                            <li id="GD19" onclick="mOvr(19)" class=""><div id="SD19" class="solar">19</div><span id="LD19" class="lunar">初七</span></li>
+                            <li id="GD20" onclick="mOvr(20)" class="weekend"><div id="SD20" class="solar">20</div><span id="LD20" class="lunar"><font color="#0058b2">春分</font></span></li>
+                            <li id="GD21" onclick="mOvr(21)" class="weekend" week="sun"><div id="SD21" class="solar">21</div><span id="LD21" class="lunar">初九</span></li>
+                            <li id="GD22" onclick="mOvr(22)" class=""><div id="SD22" class="solar">22</div><span id="LD22" class="lunar">初十</span></li>
+                            <li id="GD23" onclick="mOvr(23)" class=""><div id="SD23" class="solar">23</div><span id="LD23" class="lunar">十一</span></li>
+                            <li id="GD24" onclick="mOvr(24)" class=""><div id="SD24" class="solar">24</div><span id="LD24" class="lunar">十二</span></li>
+                            <li id="GD25" onclick="mOvr(25)" class=""><div id="SD25" class="solar">25</div><span id="LD25" class="lunar">十三</span></li>
+                            <li id="GD26" onclick="mOvr(26)" class=""><div id="SD26" class="solar">26</div><span id="LD26" class="lunar">十四</span></li>
+                            <li id="GD27" onclick="mOvr(27)" class="weekend"><div id="SD27" class="solar">27</div><span id="LD27" class="lunar">十五</span></li>
+                            <li id="GD28" onclick="mOvr(28)" class="weekend" week="sun"><div id="SD28" class="solar">28</div><span id="LD28" class="lunar">十六</span></li>
+                            <li id="GD29" onclick="mOvr(29)" class=""><div id="SD29" class="solar">29</div><span id="LD29" class="lunar">十七</span></li>
+                            <li id="GD30" onclick="mOvr(30)" class=""><div id="SD30" class="solar">30</div><span id="LD30" class="lunar">十八</span></li>
+                            <li id="GD31" onclick="mOvr(31)" class=""><div id="SD31" class="solar">31</div><span id="LD31" class="lunar">十九</span></li>
+                            <li id="GD32" onclick="mOvr(32)" class="cross_month"><div id="SD32" class="solar" rel="down">1</div><span id="LD32" class="lunar"><font color="#009900">愚人节</font></span></li>
+                            <li id="GD33" onclick="mOvr(33)" class="cross_month"><div id="SD33" class="solar" rel="down">2</div><span id="LD33" class="lunar">廿一</span></li>
+                            <li id="GD34" onclick="mOvr(34)" class="weekend last rest cross_month"><div id="SD34" class="solar" rel="down">3</div><span id="LD34" class="lunar"><font color="#d02f12">寒食节</font></span><span class="status">休</span></li>
+                            <li id="GD35" onclick="mOvr(35)" class="weekend" week="sun" style="display: none;"><div id="SD35" class="solar">undefined</div><span id="LD35" class="lunar"><font color="#d02f12">寒食节</font></span></li>
+                            <li id="GD36" onclick="mOvr(36)" class="" style="display: none;"><div id="SD36" class="solar">undefined</div><span id="LD36" class="lunar"><font color="#d02f12">寒食节</font></span></li>
+                            <li id="GD37" onclick="mOvr(37)" class="" style="display: none;"><div id="SD37" class="solar">undefined</div><span id="LD37" class="lunar"><font color="#d02f12">寒食节</font></span></li>
+                            <li id="GD38" onclick="mOvr(38)" class="" style="display: none;"><div id="SD38" class="solar">undefined</div><span id="LD38" class="lunar"><font color="#d02f12">寒食节</font></span></li>
+                            <li id="GD39" onclick="mOvr(39)" class="" style="display: none;"><div id="SD39" class="solar">undefined</div><span id="LD39" class="lunar"><font color="#d02f12">寒食节</font></span></li>
+                            <li id="GD40" onclick="mOvr(40)" class="" style="display: none;"><div id="SD40" class="solar">undefined</div><span id="LD40" class="lunar"><font color="#d02f12">寒食节</font></span></li>
+                            <li id="GD41" onclick="mOvr(41)" class="weekend" style="display: none;"><div id="SD41" class="solar">undefined</div><span id="LD41" class="lunar"><font color="#d02f12">寒食节</font></span></li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- 主要日历模块 end-->
+                <div class="almanac">
+                    <span id="info_all">2021年 3月3日  星期三 10周</span>
+                    <span id="info_nong"><b>【牛年】</b>正月二十</span>
+                    <span id="info_chang">辛丑年 庚寅月 庚戌日</span>
+                </div>
+            </div>
+
+        </div>
+        <script id="script_jquery" src="./calendar/jquery-1.js"></script>
+        <script id="script_all" src="./calendar/calendar6.js"></script>
+        <script id="script_jquery"></script>
+
+    </div>
+
+</body>
+</html>
