@@ -1,0 +1,209 @@
+{
+  "fontName": "宋体",
+  "fontSize": 10,
+  "iconSize": 32,
+  "style": 1,
+  "items": [
+    {
+      "text": "按钮演示",
+      "className": "button",
+      "id": "w_webbutton_demo",
+      "icon": 61717,
+      "png": "toolbar\\demo.png",
+      "tip": "演示 webbutton 按钮属性及基本使用方法",
+      "strectch": false
+    },
+    {
+      "text": "图标查找",
+      "className": "button",
+      "id": "w_icon_search",
+      "icon": 61717,
+      "png": "toolbar\\iconsearch.png",
+      "tip": "打开任务",
+      "strectch": false
+    },
+    {
+      "text": "自绘图标",
+      "className": "button",
+      "id": "w_draw_iconfont",
+      "icon": 61717,
+      "png": "toolbar\\draw.png",
+      "tip": "",
+      "strectch": false
+    },
+    {
+      "className": "separator"
+    },
+    {
+      "text": "风格按钮",
+      "className": "button",
+      "id": "w_webbutton_style",
+      "icon": 61717,
+      "png": "toolbar\\face.png",
+      "tip": "",
+      "strectch": false
+    },
+    {
+      "text": "MessageBox",
+      "className": "button",
+      "id": "w_messagebox_demo",
+      "icon": 61717,
+      "png": "toolbar\\style.png",
+      "tip": "",
+      "strectch": false
+    },
+    {
+      "className": "separator"
+    },
+    {
+      "text": "箭头",
+      "className": "button",
+      "id": "w_arrow",
+      "icon": 61717,
+      "png": "toolbar\\refresh.png",
+      "tip": "",
+      "strectch": false,
+      "speed": 50,
+      "angle": 15
+    },
+    {
+      "text": "按钮组件",
+      "className": "button",
+      "id": "w_gui_demo",
+      "icon": 61717,
+      "png": "toolbar\\suite.png",
+      "tip": "",
+      "strectch": false
+    },
+    {
+      "text": "布局演示",
+      "className": "button",
+      "id": "w_docker_demo",
+      "icon": 61717,
+      "png": "toolbar\\docker.png",
+      "tip": "",
+      "strectch": false
+    },
+    {
+      "text": "HTML演示",
+      "className": "button",
+      "id": "w_html_demo",
+      "icon": 61717,
+      "png": "toolbar\\html.png",
+      "tip": "",
+      "strectch": false
+    },
+    {
+      "className": "separator"
+    },
+    {
+      "text": "颜色皮肤",
+      "className": "button",
+      "id": "color",
+      "icon": 61717,
+      "png": "toolbar\\color.png",
+      "tip": "",
+      "menu": [
+        {
+          "id": "skin_normal",
+          "text": "精典永在",
+          "checked": false
+        },
+        {
+          "id": "skin_sky",
+          "text": "蓝蓝天空",
+          "checked": false
+        },
+        {
+          "id": "skin_man",
+          "text": "粗犷汉子",
+          "checked": false
+        },
+        {
+          "id": "skin_grass",
+          "text": "青青原草",
+          "checked": false
+        },
+        {
+          "id": "skin_boy",
+          "text": "我是暖男",
+          "checked": false
+        },
+        {
+          "id": "skin_black",
+          "text": "VS暗黑风格",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "text": "快捷方式",
+      "className": "button",
+      "id": "shortcutstyle",
+      "icon": 61717,
+      "png": "toolbar\\win22.png",
+      "tip": "",
+      "menu": [
+        {
+          "id": "style_0",
+          "text": "横向",
+          "checked": false
+        },
+        {
+          "id": "style_1",
+          "text": "纵向",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "text": "配置",
+      "className": "button",
+      "id": "w_setup",
+      "icon": 61717,
+      "png": "toolbar\\setup.png",
+      "tip": "",
+      "strectch": false
+    },
+    {
+      "className": "separator"
+    },
+    {
+      "text": "关于",
+      "className": "button",
+      "id": "about",
+      "icon": 61717,
+      "png": "toolbar\\about.png",
+      "tip": "",
+      "strectch": false
+    },
+    {
+      "text": "退出",
+      "className": "button",
+      "id": "exit",
+      "icon": 61717,
+      "png": "toolbar\\exit.png",
+      "tip": "",
+      "strectch": false
+    },
+    {
+      "className": "separator"
+    },
+    {
+      "className": "text",
+      "text": " 本框架有偿使用(666￥红包)",
+      "strectch": true
+    },
+    {
+      "className": "separator"
+    },
+    {
+      "className": "button",
+      "id": "busy",
+      "png": "images\\router.png",
+      "static": true,
+      "speed": 60,
+      "angle": 15
+    }
+  ]
+}

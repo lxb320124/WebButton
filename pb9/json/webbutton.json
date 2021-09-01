@@ -1,0 +1,12 @@
+{
+    "skin": {
+        "name": "skin_black",
+        "backColor": 2170398,
+        "textColor": 14803425,
+        "captionColor": 3617844,
+        "captionTextColor": 14803425,
+        "borderColor": 3617844,
+        "windowColor": 2170398,
+        "scrollColor": 2170398
+    }
+}
