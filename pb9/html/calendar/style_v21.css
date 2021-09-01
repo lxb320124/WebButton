@@ -1,0 +1,164 @@
+@charset "gb2312";
+
+
+/*wrap*/
+.wp { width: 650px; margin: 0 auto; }
+#wrap{width:650px;margin:3px auto 0;}
+
+.wnl-title .prev,.wnl-title .next,.btn-today,.wnl-title .todays .alarm-clock,.today_almanac .yi .icon, .today_almanac .ji .icon, .today_almanac .chong .icon{background:url(../../images/rili/v2/sprite.png) no-repeat;}
+
+/*wnl-title*/
+.wnl-title {margin-top: 2px;height: 37px;width: 650px;line-height: 37px;background: #2cabef;border-bottom: 2px solid #1895d8;padding-left: 20px;}
+.time-control {float:left;padding-top:9px}
+.control-bar {float:left;position:relative;margin-right:24px;height:22px;z-index:2;}
+.wnl-title .prev,.wnl-title .next{width:16px;height: 16px;float: left;position:relative;top:3px;}
+.wnl-title .prev{background-position: 0 -9px;}
+.wnl-title .next{background-position: -21px -9px;}
+.wnl-title .prev:hover{background-position: -42px -9px;}
+.wnl-title .next:hover{background-position: -63px -9px;}
+
+.control{width:85px;position:relative;color:#666;height:22px;float: left;font-size: 14px;display:inline;margin:0 4px;}
+.control-bar .list {position:absolute;top:22px;left:-1px;width:85px;display:none;z-index:10000;height:210px;overflow:auto;background:#fff;border: 1px solid #2cabef;}
+.holiday-bar .list {width:120px;left:0}
+.control-bar .list li {cursor:pointer;text-align:center;line-height:20px;height:20px;padding-left: 6px;text-align:center;color:#666;margin-bottom:1px}
+.control-bar .list li:hover,.control-bar .list li.hover {background:#c8ecff;}
+.field {padding:0 23px 0 13px;height:22px;line-height:22px;background:#fff;text-align:center;cursor:pointer}
+.holiday-bar .field {width:120px}
+.trigger {position:absolute;right:7px;top:10px;height:0;width:0;border-width:4px;border-style:solid dashed dashed;border-color:#9A9A9A transparent  transparent;overflow:hidden;cursor:pointer;font-size: 0;}
+.active .trigger{border-style: dashed dashed solid;border-color:transparent transparent #2CABEF;top:6px;}
+.simple-control .control{width:138px;}
+.simple-control .list{width: 138px;height: auto;}
+.simple-control .list li{text-align: left;padding:0 10px 0 16px;}
+.today-bar{height:25px;width: 83px;top:-2px;}
+.today-bar .btn-today{width: 83px;height: 26px;line-height: 26px;vertical-align:baseline;text-align: center;display:inline-block;overflow: hidden;background-position: 0 -93px;color:#1895d8;font-size: 14px;font-weight: bold;float: left;margin-top: 1px;}
+.today-bar .btn-today:hover{background-position: 0 -67px;text-decoration: none;color:#fff;}
+
+/*time*/
+.wnl-title .todays { width:185px;height: 38px; float:right; zoom: 1; position:relative;right:35px;}
+.wnl-title .todays .gmt { font-size: 16px; color: #fff; margin-right: 15px;height:16px;line-height: 16px;overflow: hidden;display:inline-block;position:absolute;top:13px;left:55px;}
+.wnl-title .todays  b { margin-left: 5px;display:inline-block;position:absolute;top:0px;right:0;font-size:24px;font-family: 'Microsoft YaHei'; font-weight: normal; color:#fff;}
+.wnl-title .todays .alarm-clock { background-position: 0 -41px; width: 30px; height: 25px;display:inline-block;position:absolute;top:7px;left:0;margin-right: 15px;}
+.wnl-title .todays .alarm-clock:hover { background-position: -31px -41px; }
+
+
+.ie6 .wnl-title .todays  b,.ie7 .wnl-title .todays  b,.ie8 .wnl-title .todays  b{top:1px;}
+@media screen and (-webkit-min-device-pixel-ratio:0) { .wnl-title .todays .gmt {top:12px;}.wnl-title .todays  b{top:1px;} }
+
+
+.mian{position:relative;zoom:1;margin-top: 6px;z-index:1;}
+.mian .content-c{float: left;display:inline;width: 670px;background: #fff;height: 424px;}
+.mian .subar{float: right;display:inline;width: 269px;border: 1px solid #d9d9d9;background: #fff;height: 422px;overflow:hidden;}
+.almanac-hd{height: 30px;line-height: 30px;border-bottom: 2px solid #91d4f8;}
+.almanac-hd h3{color:#1895d8;font-size: 16px;font-family: 'Microsoft YaHei';text-align: center;margin-top: 0px;}
+
+.almanac .date-base{padding:18px 0 0px 110px;height:85px;position:relative;}
+.almanac .date-base span { display: block; text-align: center; font-size: 13px; color: #666; line-height:22px;}
+.almanac .date-base .diffday { color: #2cabef; font-weight: bold; }
+.almanac .date-base .tday { color: #2cabef; font-size: 75px;font-family: 'Arial'; line-height: 90px; width:96px;position:absolute;left:14px;top:8px;}
+.almanac .date-base .nday { padding: 0; height:22px; overflow:hidden;}
+.almanac .date-base .ganzhi { padding: 0; height:22px; overflow:hidden;}
+.almanac .date-base .jieri .festival { color: #d02f12; font-weight: bold; white-space: nowrap; height:22px; overflow:hidden;}
+.almanac .date-base .jieri .festival a { color: #d02f12; font-weight: bold; margin-right: 4px; }
+.almanac .date-base .jieri .festival b { font-size: 0; display: inline-block; width: 4px; overflow: hidden; }
+.almanac .date-base.rowspan4{ padding-top:9px; padding-bottom:9px; }
+.almanac .date-base.rowspan4 .jieri .remark{ font-size:12px; height:22px; overflow:hidden;}
+
+.today_almanac{padding:0 14px;}
+.today_almanac .yiji { padding: 4px 22px 0 0; color: #666; font-size: 0;height:90px;border-top:1px dashed #cfcfcf;width:219px;overflow:hidden;}
+.today_almanac .yiji a {padding:0 6px;height:19px;line-height: 19px;overflow: hidden;font-size: 12px;display:inline-block; color: #666;}
+.today_almanac .yiji a:hover { color: #fff;text-decoration: none; background: #65bfef;}
+.today_almanac .yi, .today_almanac .ji, .today_almanac .chong { padding: 10px 0 0px 26px; width:217px;position: relative;height: 21px; line-height: 21px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; zoom: 1; }
+.today_almanac .yi .icon, .today_almanac .ji .icon, .today_almanac .chong .icon { width: 19px; height: 19px; position: absolute; left: 0; top: 10px; }
+.today_almanac .yi .icon { background-position: 0px -121px; }
+.today_almanac .ji .icon { background-position: -24px -121px; }
+.today_almanac .chong .icon { background-position: -45px -121px; }
+
+.ie6 .today_almanac .yiji a,.ie7 .today_almanac .yiji a,.ie8 .today_almanac .yiji a {line-height: 20px;}
+
+.today_god{text-align: center;margin-top: 12px;vertical-align:baseline;height:28px;overflow: hidden;}
+.today_god a{width: 72px;height: 26px;overflow: hidden;line-height: 26px;letter-spacing:normal;text-align: center;color:#666;border:1px solid #dbdbdb;display:inline-block;margin:0 4px;vertical-align:baseline}
+.today_god a:hover{background: #65bfef;text-decoration: none;color:#fff;border-color: #65bfef;}
+
+.today_event{height: 120px;margin-top: 12px;text-align: center;}
+.today_event li{ width:110px; height:26px; line-height:26px; float:left; margin-left:16px; _display:inline; }
+.today_event i{ background-color:#d0d5db; width:3px; height:3px; line-height:3px; overflow:hidden; float:left; margin:11px 6px 0 0; }
+.today_event a{font-size: 13px;color:#666;}
+.today_event a:hover{color:#fd5151;}
+
+/*calendar*/
+.calendar{border:1px solid #d9d9d9; width:668px;text-align:center;font-size:13px;position:relative;*zoom:1;*overflow: hidden;}
+.calendar_th{width:100%; height:32px; overflow:hidden}
+.calendar ul{margin-left:-1px; width:670px}
+.calendar_th li{border-bottom:2px solid #e2e2e2; border-left:1px solid #d9d9d9; width:94px; height:30px; line-height:30px; float:left; color:#8e8e8e;font-size:14px;}
+.calendar_td{width:100%; height:359px; overflow:hidden}
+.calendar ol{margin:-1px 0 0 -1px; width:675px;height:360px;overflow:hidden;}
+.calendar_td li{border-top:1px solid #eaeaea; border-left:1px solid #eaeaea; width:94px; height:59px; padding-top:12px; line-height:20px; float:left; color:#555; position:relative; overflow:hidden; cursor:pointer}
+.calendar .weekend{color:#d02f12; width:96px}
+.calendar .work{color:#555}
+.calendar .rest{color:#d02f12}
+.calendar .cross_month{ background:#f5f5f5;opacity:0.6;filter:alpha(opacity=60);border-left-color:#DDDDDD;border-top-color:#DDDDDD;}
+.calendar .last{border-right:1px solid #eaeaea; width:96px;}
+.calendar .today{background:#2cabef}
+.calendar .solar{font:28px/28px Arial; height:32px;font-weight:bold;}
+.calendar .lunar{color:#999;}
+.calendar .status{width:21px; height:21px; line-height:21px; font-weight:660; color:#fff; position:absolute; display:none; left:5px; top:5px; z-index:2; overflow:hidden;font-size:14px;}
+.calendar .today .status{background:#0481d1; display:block}
+.calendar .work .status{background:#53a253; display:block}
+.calendar .rest .status{background:#e15e5e; display:block}
+.calendar .cRed,.calendar .tradition .lunar{color:#d02f12}
+.calendar .cGreen,.calendar .internation .lunar{color:#69b069}
+.calendar .cBlue,.calendar .solar_term .lunar{color:#608cba}
+.calendar .today .solar,.calendar .today .lunar{color:#fff}
+.calendar .selected{width:88px; height:65px; border:3px solid #2cabef; position:absolute; left:0; top:0; z-index:9}
+.calendar .weekend .selected{width:90px}
+
+.calendar_low .calendar_td li{height:53px; padding-top:6px}
+.calendar_low .solar{height:29px}
+.calendar_low .selected{height:53px;}
+.calendar_low .calendar ol {margin-top:-2px;}
+/*date_tips start*/
+.date_tips{color:#999; height:29px; line-height:29px; border-top:2px solid #eaeaea; font-size:12px;}
+.date_tips .pipe{color: #d1d1d1; margin:0 15px}
+.date_tips a{color:#608cba}
+
+/* link_group_cate add 20130826*/
+.link_group{width:650px;margin:0 auto;margin-top: 2px;padding:0;position:relative;overflow: hidden;zoom:1;border: 1px solid #dbdbdb;background: #fff;}
+.link_group_cate{width:650px;margin-bottom:-1px;padding:2px 0 5px;border:0 none;border-bottom:1px dashed #dbdbdb;background:transparent;}
+.link_group_cate dt{float:left;width:120px;padding:4px 0 0 26px;color:#0a83c3;font-weight:normal;font-size:18px;font-family: 'Microsoft YaHei';}
+.link_group_cate dt span{margin-left:5px;font-weight:normal;color:#999;}
+.link_group_cate dd{float:left;width:842px;font-size: 14px;}
+.link_group_cate dd li{float:left;width:168px;}
+.link_group_cate .link_box_list li{height:30px}
+.link_group_cate .link_box_list li a{height:30px;line-height:30px;padding:0 12px 0 8px;background:none;color:#666;}
+.link_group_cate .link_box_list li a:hover{color:#fd5151;}
+.link_group_current{position:relative;border-color:#7eb3e6;background: #f3faff;}
+
+#lichun { border: 1px solid #dcdcdc; padding: 0 61px; background: white; padding-top: 34px; }
+#lichun h1 { font-size: 30px; font-family: "Microsoft Yahei"; color: #2e8bd2; text-align: center; font-weight: normal; height: 30px; line-height: 30px; padding-bottom: 16px; margin-bottom: 30px; background: url(../../Local%20Settings/Temporary%20Internet%20Files/images/rili/lichun_h1_bg.png) 50% 100% no-repeat; }
+#lichun h2 { font-size: 14px; line-height: 24px; text-indent: 2em; color: #666666; }
+#lichun h4 { font-size: 14px; font-weight: bold; line-height: 26px; color: #007fdf; }
+#lichun p { font-size: 14px; line-height: 26px; color: #666666; text-indent: 2em; padding: 4px 0; }
+#lichun .example { padding: 0 140px 30px; }
+#lichun .example p { font-size: 14px; line-height: 24px; color: #2CABEF; text-align: center; clear: left; margin-bottom: 10px; padding-right: 16px; }
+#lichun .example .sub-icon { float: left; width: 271px; margin: 0 10px; border:1px solid #d9d9d9;}
+#lichun .example .sub-icon .nday b { border: 2px solid red; padding: 4px 0; }
+#lichun .mod_1b { margin: 24px 0 36px; border: 1px solid #cbe8ff; }
+#lichun .other { font-size: 14px; }
+#lichun .other h3 { background: #edf7ff; border-bottom: 1px solid #cbe8ff; color: #348bcf; font-size: 14px; font-weight: bold; height: 24px; padding-left: 16px; padding-top: 3px; position: relative; }
+#lichun .other .other_tool { margin-top: -1px; }
+#lichun .other .other_tool th { font-weight: normal; text-align: left; }
+#lichun .other .other_tool td { border-left: 1px solid #ddf0ff; }
+#lichun .other .other_tool th, #lichun .other .other_tool td { border-top: 1px solid #ddf0ff; padding: 8px 15px; }
+#lichun .other .other_tool th a, #lichun .other .other_tool td a { color: #666666; }
+#lichun .other .other_tool th a:hover, #lichun .other .other_tool td a:hover { color: #fd5151; }
+
+
+.link_ticket{ background-color:#FFF; border:1px solid #dbdbdb; padding:13px 10px; height:42px; margin-top:10px; overflow:hidden; zoom:1; }
+.link_ticket a{ float:left; width:202px; height:42px; line-height:42px; background: url(../../Local%20Settings/Temporary%20Internet%20Files/images/rili/v2/link_ticket.png) no-repeat; margin:0 20px; font-size:20px; font-family:Microsoft Yahei; color:#666; text-align:center; _display:inline; }
+.link_ticket a:hover{ background-position:0 -50px; color:#666; text-decoration:none; }
+.link_ticket .btn_12306{ background-position:0 -100px; color:#fff; }
+.link_ticket .btn_12306:hover{ background-position:0 -150px; color:#fff; }
+
+.taglist{width: 600px;height: 60px;line-height: 60px; text-align: right;color: #d0d5db;float: right;font-size: 16px;}
+.taglist a{margin:0 14px;color: #666;font-family: microsoft yahei}
+.taglist a:hover{color: #1895d8;text-decoration: none}
